@@ -13,7 +13,7 @@ class {{pascalCase name}} extends React.Component{
 
   render() {
     return (
-      <div className={Style.{{pascalCase name}}}>
+      <div className={Style.{{pascalCase name}} }>
 
       </div>
     )
