@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.App {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  height: 100%;
+  background-color: rgb(246, 246, 246);
+}
+
+.Container {
+  @extend .h-100;
+}
+
+.Col {
+  border: 1px solid rgb(223, 223, 223);
+  padding: 15px;
+  margin: 15px;
+  background-color:rgb(255, 255, 255);
+}
+
+.Row {
+  @extend .h-100;
+  @extend .justify-content-center;
+}
