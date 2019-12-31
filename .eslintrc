@@ -19,6 +19,9 @@
   "plugins": [
       "react"
   ],
+  "globals": {
+    "process": true
+  },
   "rules": {
     "no-console": [2, {"allow": ["warn", "error"]}],
     "indent": ["error", 2],
