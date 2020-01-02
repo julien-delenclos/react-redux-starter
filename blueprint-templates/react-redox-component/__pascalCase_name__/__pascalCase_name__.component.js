@@ -10,6 +10,18 @@ class {{pascalCase name}} extends React.Component{
     super(...arguments)
     this.state = { }
   }
+  
+  componentDidUpdate(prevProps){
+    Object.keys(prevProps).forEach(key => {
+      if(prevProps[key] !== this.props[key]){
+        let oldValue = prevProps[key]
+        let value = this.props[key]
+        if(typeof this[`on${key[0].toUpperCase()}${key.slice(1)}Changed`] === 'function'){
+          this[`on${key[0].toUpperCase()}${key.slice(1)}Changed`](oldValue, value)
+        }
+      }
+    })
+  }
 
   render() {
     return (
