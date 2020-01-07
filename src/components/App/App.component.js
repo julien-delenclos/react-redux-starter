@@ -21,7 +21,7 @@ class App extends React.Component{
   render(){
     return (
       <ViewPort>
-        <HeaderComponent Title={this.state.title} Icon={Fa.FaMap}>
+        <HeaderComponent title={this.state.title} icon={Fa.FaMap}>
           <MenuComponent>
             Menu
             <MenuPopoverComponent icon={Fa.FaInfo} title='Info'>
@@ -51,7 +51,7 @@ class App extends React.Component{
               </Fill>              
             </LeftResizable>
             <Fill>
-              <PanelComponent Grey={true}>
+              <PanelComponent grey={true}>
                 Fill
               </PanelComponent>
             </Fill>
