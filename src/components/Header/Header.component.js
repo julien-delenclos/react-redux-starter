@@ -14,7 +14,7 @@ class Header extends React.Component{
     return (
       <Top size='30px' className={Style.Navbar}>
         <Fill>
-          <this.props.Icon size='24px' className={Style.Icon + ' ml-3'}/> {this.props.Title}
+          <this.props.icon size='24px' className={Style.Icon + ' ml-3'}/> {this.props.title}
         </Fill>
         <Right size='50%' centerContent='vertical' className='text-right mr-3'> 
           {this.props.children}
