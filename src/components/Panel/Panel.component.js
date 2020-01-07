@@ -25,7 +25,7 @@ class Panel extends React.Component{
 
   render() {
     return (
-      <Fill className={Style.Panel + ' ' + (this.props.Grey ? Style.Grey : Style.White)} 
+      <Fill className={Style.Panel + ' ' + (this.props.grey ? Style.Grey : Style.White)} 
         style={{width: !this.state.visible ? '40px': this.state.initialWidth}}>
         <Left size={this.props.canHide ? '40px' : '0px'} className='text-center'>
           <Top size='40px' centerContent='vertical' 
